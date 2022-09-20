@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Errand</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js" type="module" defer></script>
+</head>
+<body>
+    <main>
+        <section class="title-bar">
+            <section class="sub-title-bar-menu" data-tauri-drag-region>
+                <text-button>New</text-button>
+                <square-button></square-button>
+            </section>
+            <section class="sub-title-bar" data-tauri-drag-region>
+                <round-button icon="close" id="titlebar_close"></round-button>
+                <round-button icon="maximise" id="titlebar_maximise"></round-button>
+                <round-button icon="minimise" id="titlebar_minimise"></round-button>
+            </section>
+        </section>
+        <section class="list-bar">
+            <tab-button colour="#BD6104" count="0">3D Printer</tab-button>
+            <tab-button colour="#0470BD" count="0" data-active="true">Desktop Apps</tab-button>
+            <tab-button colour="#BD1404" count="0">Games</tab-button>
+        </section>
+        <section class="list-content">
+
+        </section>
+    </main>
+</body>
+</html>
